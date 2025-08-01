@@ -1,0 +1,20 @@
+# .NET project ignore file
+# This file is used to ignore files and directories in a .NET project.
+
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
