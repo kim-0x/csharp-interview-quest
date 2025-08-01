@@ -1,10 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 var book = new Book("1234567890", "C# Programming");
 
-var list = new List();
+var list = new ObjectList();
 list.Add(10);
-Console.WriteLine(list[0]);
+Console.WriteLine(list[0]); // Output: 10
 
-var bookList = new BookList();
-bookList.Add(book);
-Console.WriteLine(bookList[0].Title);
+list.Add(book);
+var unboxBook = list[1] as Book;
+Console.WriteLine(unboxBook?.Title); // Output: C# Programming
+
