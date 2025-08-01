@@ -1,11 +1,11 @@
-public class GenericList<T>
+public class GenericDictionary<TKey, TValue>
 {
-    public void Add(T item)
+    public void Add(TKey key, TValue value)
     {
         throw new NotImplementedException("Add method is not implemented yet.");
     }
 
-    public T this[int index]
+    public TValue this[TKey key]
     {
         get
         {
